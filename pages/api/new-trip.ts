@@ -12,20 +12,23 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
       longitude: -115.1398, // Las Vegas
     },
     rider: {
-      id: 'rider-jc12',
-      name: 'Marcus Taylor',
+      id: 'rider-CD18',
+      name: 'Chudi Duru',
     },
     driver: {
       id: 'driver-lx01',
-      name: 'Leo Santana',
+      name: 'Chuka Duru',
     },
     vehicle: {
       make: 'Lamborghini',
       model: 'Huracán EVO',
       licensePlate: 'LMB-640',
     },
-    estimatedArrival: '4 mins',
+    estimatedArrival: '80 mins',
     status: 'on-the-way',
-    priceEstimate: '$850.00',
+    priceEstimate: '$8500.00',
   });
 }
+
+
+
