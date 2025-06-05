@@ -101,3 +101,24 @@ export default function Home() {
     </div>
   );
 }
+
+async function getTripData() {
+  const res = await fetch("http://localhost:3000/api/new-trip", {
+    cache: "no-store",
+  });
+
+  if (!res.ok) throw new Error("Failed to fetch trip data");
+
+  return res.json();
+}
+
+export default async function HomePage() {
+  const data = await getTripData();
+
+  return (
+    <main style={{ padding: 40 }}>
+      <h1> Current Trip Info</h1>
+      <pre>{JSON.stringify(data, null, 2)}</pre>
+    </main>
+  );
+}
