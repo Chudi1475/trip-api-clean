@@ -117,7 +117,7 @@ export default async function HomePage() {
 
   return (
     <main style={{ padding: 40 }}>
-      <h1>🚗 Current Trip Info</h1>
+      <h1> Current Trip Info</h1>
       <pre>{JSON.stringify(data, null, 2)}</pre>
     </main>
   );
